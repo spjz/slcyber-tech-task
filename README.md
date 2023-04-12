@@ -13,11 +13,11 @@ To Set Up the application run the following in the application directory
 ```
 then in a new terminal run
 ```
-docker exec -it searchlight-cyber-tech-test-laravel.test-1 php artisan migrate
-docker exec -it searchlight-cyber-tech-test-laravel.test-1 php artisan db:seed
+docker exec -it full-stack-tech-test-laravel.test-1 php artisan migrate
+docker exec -it full-stack-tech-test-laravel.test-1 php artisan db:seed
 ```
 
-We'd like you to have a go at tackling the following: 
+We'd like you to have a go at tackling the following:
 
 - Update the landing page to match the design and add the ability to search for a Book Title
 - There's an issue with trying to update a book, find and resolve the issue.
@@ -29,4 +29,4 @@ We'd like you to have a go at tackling the following:
 
 6. Front end -> make page to match design with search bar
 7. Front end debug issue?
-8. Something with emitting data / passing a prop 
+8. Something with emitting data / passing a prop

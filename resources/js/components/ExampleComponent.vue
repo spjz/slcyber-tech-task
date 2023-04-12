@@ -1,0 +1,13 @@
+<template>
+    <div>
+        <h1>TESTING</h1>
+    </div>
+</template>
+
+<script>
+    export default {
+        name: 'ExampleComponent',
+    }
+</script>
+
+<style></style>
