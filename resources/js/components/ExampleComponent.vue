@@ -7,6 +7,20 @@
 <script>
     export default {
         name: 'ExampleComponent',
+        data() {
+            return {
+                books: this.getBooks(),
+            }
+        },
+        methods: {
+            async getBooks() {
+                console.log('>> getBooks');
+                await axios.get('api/books')
+                .then((response) => {
+                    console.log('>> response', response);
+                })
+            }
+        }
     }
 </script>
 
