@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+const tailwindcss = require('tailwindcss');
 require('laravel-mix-purgecss');
 
 /*
@@ -13,6 +14,29 @@ require('laravel-mix-purgecss');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+  .sass('resources/scss/app.scss', 'public/css')
+  .options({
+    postCss: [
+      tailwindcss('tailwind.config.js'),
+    ],
+    processCssUrls: false,
+  })
+  .purgeCss({
+    enabled: mix.inProduction(),
+    folders: [
+      'resources/js/components',
+      'resources/views',
+    ],
+    extensions: ['vue', 'css', 'blade.php'],
+    safelist: {
+      standard: [
+        /multiselect/,
+        /daterangepicker/,
+        /\[.*\]/,
+        /!.*/,
+      ],
+    },
+  })
   .webpackConfig({
     output: {
       chunkFilename: 'js/components/[name].js?id=[chunkhash]',
@@ -24,6 +48,9 @@ mix.js('resources/js/app.js', 'public/js')
       },
     },
   })
+  .browserSync({
+    proxy: 'localhost'
+   })
   .vue();
 
 if (mix.inProduction()) {
