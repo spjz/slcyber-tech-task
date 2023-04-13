@@ -537,6 +537,12 @@ video {
 .p-3 {
     padding: 0.75rem
 }
+.pt-8 {
+    padding-top: 2rem
+}
+.pb-20 {
+    padding-bottom: 5rem
+}
 .text-left {
     text-align: left
 }
@@ -550,6 +556,9 @@ video {
     font-size: 3rem;
     line-height: 1
 }
+.font-semibold {
+    font-weight: 600
+}
 .text-orange {
     --tw-text-opacity: 1;
     color: rgb(233 69 32 / var(--tw-text-opacity))
@@ -557,6 +566,9 @@ video {
 .text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+.underline {
+    text-decoration-line: underline
 }
 
 /* purgecss start ignore */

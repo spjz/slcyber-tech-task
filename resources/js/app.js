@@ -8,7 +8,7 @@ import Vue from 'vue';
  * page basis to reduce bundle size and prevent loading unwanted components on each page.
  *
  */
-Vue.component('ExampleComponent', () => import('./components/ExampleComponent.vue'));
+Vue.component('BookListing', () => import('./components/BookListing.vue'));
 
 /**
  * Bootstrapping

@@ -6,7 +6,7 @@
     </head>
     <body class="">
         <div id="app">
-            <example-component></example-component>
+            <book-listing></book-listing>
          </div>
 
          <script src="{{ mix('js/app.js') }}"></script>

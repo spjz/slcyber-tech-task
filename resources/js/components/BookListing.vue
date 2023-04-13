@@ -1,8 +1,12 @@
 <template>
-    <div class="w-9/12 mr-auto ml-auto -mt-0 mb-0">
-        <div class="text-center">
+    <div class="">
+        <div class="bg-gray-800 pt-8 pb-20">
+            <div class="w-9/12 text-center mr-auto ml-auto -mt-0 mb-0">
             <h1 class="text-orange text-5xl p-10">Book Shop</h1>
-            <p class="w-9/12 mr-auto ml-auto -mt-0 mb-0">Cupcake ipsum dolor sit amet croissant. I love topping candy canes sweet roll croissant caramels. Soufflé macaroon liquorice chocolate tart I love.</p>
+            <p class="w-9/12 mr-auto ml-auto -mt-0 mb-0 text-white">Cupcake ipsum dolor sit amet croissant. I love topping candy canes sweet roll croissant caramels. Soufflé macaroon liquorice chocolate tart I love.</p>
+        </div>
+    </div>
+        <div  class="w-9/12 text-center mr-auto ml-auto -mt-0 mb-0">
             <div class="text-right my-9">
                 <input type="text" placeholder="Search by book title ..." class="rounded-md border-gray-400 border-solid border-[1px] p-2 w-96">
             </div>
@@ -22,8 +26,8 @@
                         <td class="border-white border-t p-3">{{ book.author }}</td>
                         <td class="border-white border-t p-3">{{ book.rating }}</td>
                         <td class="border-white border-t p-3">
-                            <span>Edit</span>
-                            <span>Delete</span>
+                            <a class="underline font-semibold">Edit</a>
+                            <a class="underline font-semibold">Delete</a>
                         </td>
                     </tr>
                     </tbody>
@@ -35,7 +39,7 @@
 
 <script>
     export default {
-        name: 'ExampleComponent',
+        name: 'BookListing',
         data() {
             return {
                 books: this.getBooks(),
@@ -57,22 +61,4 @@
 div table {
   border-spacing: 1px 0;
 }
-
-
-/* div table
-  div {
-    table {
-
-      thead tr {
-      }
-      tbody tr {
-      }
-      tr {
-        th, td {
-        }
-        td {
-        }
-      }
-    }
-  } */
 </style>

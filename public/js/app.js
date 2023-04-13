@@ -21,8 +21,8 @@ __webpack_require__.r(__webpack_exports__);
  * page basis to reduce bundle size and prevent loading unwanted components on each page.
  *
  */
-vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('ExampleComponent', function () {
-  return __webpack_require__.e(/*! import() */ "resources_js_components_ExampleComponent_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue"));
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('BookListing', function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_components_BookListing_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/BookListing.vue */ "./resources/js/components/BookListing.vue"));
 });
 
 /**
@@ -18271,7 +18271,7 @@ const toJSONObject = (obj) => {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/components/" + chunkId + ".js?id=" + "59133aa947bbb233" + "";
+/******/ 			return "js/components/" + chunkId + ".js?id=" + "cae2a4cb4e3f5df8" + "";
 /******/ 		};
 /******/ 	})();
 /******/ 	
