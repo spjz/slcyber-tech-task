@@ -30,3 +30,9 @@ We'd like you to have a go at tackling the following:
 6. Front end -> make page to match design with search bar
 7. Front end debug issue?
 8. Something with emitting data / passing a prop
+
+
+Handy Links
+- https://vuejs.org/guide/introduction.html
+- https://tailwindcomponents.com/cheatsheet/
+- https://laravel.com/docs/10.x
