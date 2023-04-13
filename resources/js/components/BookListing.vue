@@ -26,8 +26,8 @@
                         <td class="border-white border-t p-3">{{ book.author }}</td>
                         <td class="border-white border-t p-3">{{ book.rating }}</td>
                         <td class="border-white border-t p-3">
-                            <a class="underline font-semibold">Edit</a>
-                            <a class="underline font-semibold">Delete</a>
+                            <button class="underline font-semibold" @click="testing()">Edit</button>
+                            <button class="underline font-semibold">Delete</button>
                         </td>
                     </tr>
                     </tbody>
@@ -53,6 +53,9 @@
                     this.books = response.data.data;
                 })
             },
+            testing() {
+                router.push({ name: 'edit-book' });
+            }
         }
     }
 </script>

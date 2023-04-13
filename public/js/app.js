@@ -24,6 +24,9 @@ __webpack_require__.r(__webpack_exports__);
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('BookListing', function () {
   return __webpack_require__.e(/*! import() */ "resources_js_components_BookListing_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/BookListing.vue */ "./resources/js/components/BookListing.vue"));
 });
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('EditBook', function () {
+  return __webpack_require__.e(/*! import() */ "resources_js_components_EditBook_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/EditBook.vue */ "./resources/js/components/EditBook.vue"));
+});
 
 /**
  * Bootstrapping
@@ -18271,7 +18274,7 @@ const toJSONObject = (obj) => {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/components/" + chunkId + ".js?id=" + "cae2a4cb4e3f5df8" + "";
+/******/ 			return "js/components/" + chunkId + ".js?id=" + {"resources_js_components_BookListing_vue":"bd5b8cd2d3528713","resources_js_components_EditBook_vue":"8d6e9dc752c31417"}[chunkId] + "";
 /******/ 		};
 /******/ 	})();
 /******/ 	

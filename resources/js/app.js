@@ -9,6 +9,8 @@ import Vue from 'vue';
  *
  */
 Vue.component('BookListing', () => import('./components/BookListing.vue'));
+Vue.component('EditBook', () => import('./components/EditBook.vue'));
+
 
 /**
  * Bootstrapping
