@@ -18274,7 +18274,7 @@ const toJSONObject = (obj) => {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/components/" + chunkId + ".js?id=" + {"resources_js_components_BookListing_vue":"bd5b8cd2d3528713","resources_js_components_EditBook_vue":"8d6e9dc752c31417"}[chunkId] + "";
+/******/ 			return "js/components/" + chunkId + ".js?id=" + {"resources_js_components_BookListing_vue":"69984fd6f22c4990","resources_js_components_EditBook_vue":"8d6e9dc752c31417"}[chunkId] + "";
 /******/ 		};
 /******/ 	})();
 /******/ 	
