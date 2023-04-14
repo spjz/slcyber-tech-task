@@ -7,8 +7,8 @@
     <body>
         <div id="app">
             <edit-book></edit-book>
-         </div>
+        </div>
 
-         <script src="{{ mix('js/app.js') }}"></script>
+        <script src="{{ mix('js/app.js') }}"></script>
     </body>
 </html>

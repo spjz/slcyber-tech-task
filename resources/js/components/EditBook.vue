@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div>
         <div class="bg-gray-800 pt-8 pb-20">
             <div class="w-9/12 text-center mr-auto ml-auto -mt-0 mb-0">
             <h1 class="text-orange text-5xl p-10">Book Shop</h1>
