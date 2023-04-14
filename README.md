@@ -18,7 +18,7 @@ docker exec -it full-stack-tech-test-laravel.test-1 php artisan migrate
 docker exec -it full-stack-tech-test-laravel.test-1 php artisan db:seed
 ```
 
-We'd like you to have a go at tackling the following: 
+We'd like you to have a go at tackling the following:
 
 
 - Update the landing page to match the design and add the ability to search for a Book Title
@@ -27,8 +27,19 @@ We'd like you to have a go at tackling the following:
 - You can currently delete books and the records be removed from the database, we want to keep those records. Enable the ability to Soft Delete books.
 - Add the ability within the API (no front end work needed) to create Genres and add multiple Genres to Books.
 - Add Unit Tests for the BookController update method.
+- Update the first page to match 'book-shop-listing.png'.
+- Update the edit book page to correctly display the book data, shown in 'edit-book-filled.png'and submit an edited book.
+
+Handy Links
+- https://v2.vuejs.org/v2/guide/
+- https://tailwindcomponents.com/cheatsheet/
+- https://laravel.com/docs/10.x
 
 
-6. Front end -> make page to match design with search bar
-7. Front end debug issue?
-8. Something with emitting data / passing a prop 
+Designs
+
+- 'book-shop-listing.png'
+![Alt text](public/images/book-shop-listing.png "book-shop-listing.png")
+
+- 'edit-book-filled.png'
+![Alt text](public/images/edit-book-filled.png "edit-book-filled.png")
