@@ -33,6 +33,6 @@ We'd like you to have a go at tackling the following:
 
 
 Handy Links
-- https://vuejs.org/guide/introduction.html
+- https://v2.vuejs.org/v2/guide/
 - https://tailwindcomponents.com/cheatsheet/
 - https://laravel.com/docs/10.x

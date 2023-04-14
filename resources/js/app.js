@@ -20,4 +20,4 @@ Vue.component('EditBook', () => import('./components/EditBook.vue'));
  */
 const app = new Vue({
     el: '#app',
-  });
+});

@@ -4,7 +4,7 @@
         <title>Full Stack Tech Test</title>
         <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
     </head>
-    <body class="">
+    <body>
         <div id="app">
             <book-listing></book-listing>
          </div>
