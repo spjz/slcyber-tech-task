@@ -40,4 +40,20 @@ Route::get('/edit/{id}', function (int $id) {
     ]);
 });
 
+Route::post('/edit/{id}', function (Request $request, int $id) {
+    $book = Book::find($id);
+
+    $validated = $request->validate([
+        'title' => 'required|string',
+        'author' => 'required|string',
+        'rating' => 'required|numeric|min:1|max:10'
+    ]);
+
+    $book->update($validated);
+
+    return view('edit', [
+        'book' => $book,
+    ]);
+});
+
 

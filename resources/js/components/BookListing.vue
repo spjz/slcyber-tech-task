@@ -3,7 +3,7 @@
 
         <div class="h-full flex flex-col justify-center items-end gap-8">
             <form method="GET" action="">
-                <input v-model="searchTerm" class="bg-white placeholder:text-grey border-grey border p-2 w-[400px]" name="term" type="text" placeholder="Search by book title ..." />
+                <input v-model="searchTerm" type="text" placeholder="Search by book title ..." class="rounded-md border-gray-400 border-solid border-[1px] p-2 w-96">
             </form>
 
             <table id="bookListing" class="w-full">
