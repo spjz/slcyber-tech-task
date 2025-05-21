@@ -41,7 +41,7 @@ Route::get('/edit/{id}', function (int $id) {
 });
 
 Route::post('/edit/{id}', function (Request $request, int $id) {
-    $book = Book::find($id);
+    $book = Book::findOrFail($id);
 
     $validated = $request->validate([
         'title' => 'required|string',
@@ -54,6 +54,14 @@ Route::post('/edit/{id}', function (Request $request, int $id) {
     return view('edit', [
         'book' => $book,
     ]);
+});
+
+Route::get('/delete/{id}', function (int $id) {
+    $book = Book::findOrFail($id);
+
+    $book->delete();
+
+    return redirect('/');
 });
 
 
