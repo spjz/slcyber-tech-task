@@ -1,15 +1,17 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
+export const content = [
     './resources/js/**/*.{js,vue}',
-  ],
-  theme: {
+];
+export const theme = {
     extend: {
         colors: {
-            'orange': '#E94520'
+            'orange': '#E94520',
+            'blue': '#1f2937',
+            'grey': '#d1d5db',
+            'white': '#ffffff',
+            'black': '#000000',
         }
     },
-  },
-  plugins: [],
-}
+};
+export const plugins = [];
 

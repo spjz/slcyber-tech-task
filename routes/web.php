@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Book;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,12 +15,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', function (Request $request)
+{
+    // Filter book titles by search query term if present
+    //
+    if ($term = $request->get('title')) {
+        $books = Book::where('title', 'LIKE', '%'.$term.'%')->get();
+    }
+    else {
+        $books = Book::all();
+    }
+
+    return view('welcome', [
+        'books' => $books,
+        'term' => $term
+    ]);
 });
 
-Route::get('/edit', function () {
-    return view('edit');
+Route::get('/edit/{id}', function (int $id) {
+    $book = Book::findOrFail($id);
+
+    return view('edit', [
+        'book' => $book
+    ]);
 });
 
 
