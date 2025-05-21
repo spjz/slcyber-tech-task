@@ -36,7 +36,7 @@ Route::get('/edit/{id}', function (int $id) {
     $book = Book::findOrFail($id);
 
     return view('edit', [
-        'book' => $book
+        'book' => $book,
     ]);
 });
 
@@ -59,6 +59,8 @@ Route::post('/edit/{id}', function (Request $request, int $id) {
 Route::get('/delete/{id}', function (int $id) {
     $book = Book::findOrFail($id);
 
+    // Detach all genres before deleting the book
+    $book->genres()->detach();
     $book->delete();
 
     return redirect('/');

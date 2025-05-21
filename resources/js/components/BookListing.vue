@@ -16,7 +16,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="book, b in books" class="bg-grey color-black">
+                    <tr v-for="book in books" class="bg-grey color-black">
                         <td>{{ book.title }}</td>
                         <td>{{ book.author }}</td>
                         <td>{{ book.rating }}</td>

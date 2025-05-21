@@ -12,4 +12,12 @@ class Book extends Model
     use SoftDeletes;
 
     protected $guarded = [];
+
+    /**
+     * Find genres associated with the current book
+     */
+    public function genres()
+    {
+        return $this->belongsToMany(Genre::class, 'books_genres', 'genres_id', 'books_id');
+    }
 }
