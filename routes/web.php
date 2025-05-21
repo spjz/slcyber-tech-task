@@ -19,7 +19,7 @@ Route::get('/', function (Request $request)
 {
     // Filter book titles by search query term if present
     //
-    if ($term = $request->get('title')) {
+    if ($term = $request->get('term')) {
         $books = Book::where('title', 'LIKE', '%'.$term.'%')->get();
     }
     else {

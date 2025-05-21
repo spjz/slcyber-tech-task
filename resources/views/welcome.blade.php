@@ -3,5 +3,5 @@
 @section('title',"Book Shop Tech Test")
 
 @section('content')
-    <book-listing :books="{{ $books }}"></book-listing>
+    <book-listing :books="{{ $books }}" term="{{ $term }}"></book-listing>
 @endsection

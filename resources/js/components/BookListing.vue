@@ -3,7 +3,7 @@
 
         <div class="h-full flex flex-col justify-center items-end gap-8">
             <form method="GET" action="">
-                <input v-model="searchTerm" class="bg-white placeholder:text-grey border-grey border p-2 w-[400px]" name="title" type="text" placeholder="Search by book title ..." />
+                <input v-model="searchTerm" class="bg-white placeholder:text-grey border-grey border p-2 w-[400px]" name="term" type="text" placeholder="Search by book title ..." />
             </form>
 
             <table id="bookListing" class="w-full">
@@ -45,7 +45,6 @@ const props = defineProps({
 });
 
 const searchTerm = ref(props.term);
-
 </script>
 
 <style lang="scss" scoped>
